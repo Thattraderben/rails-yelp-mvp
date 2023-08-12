@@ -1,0 +1,14 @@
+<div class="containter">
+  <h1>Index_Restaurants</h1>
+  <ul>
+
+    <% @restaurants.each do |restaurant| %>
+      <li><%= link_to restaurant.name, restaurant %></li>
+    <% end %>
+
+  </ul>
+
+  <hr>
+
+  <%= link_to 'List new restaurant', new_restaurant_path %>
+</div>
